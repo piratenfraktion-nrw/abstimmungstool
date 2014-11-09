@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+        <h1>Abstimmungshilfe Plenum</h1>
+
+        {% if tops %}
+        <div>
+            {% for top in tops %}
+            <div id="top">
+                <b>Top {{top.nummer}}</b>
+                <a href="https://redmine.piratenfraktion-nrw.de/issues/{{top.ticketid}}">#{{top.ticketid}}</a>
+                <p>{{top.beschreibung}}</p>
+                <div class="btn {{top.btn}}">{{top.abstimmungsempfehlung}}</div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+{% endblock %}
