@@ -19,7 +19,7 @@ setup(
     keywords = "abstimmungstool",
     url = "https://github.com/piratenfraktion-nrw/abstimmungstool",
     packages=['abstimmungstool', 'tests'],
-    long_description=read('README'),
+    long_description=read('README.md'),
     classifiers=[
         "Development Status :: 1 - Alpha",
         "Topic :: Utilities",
