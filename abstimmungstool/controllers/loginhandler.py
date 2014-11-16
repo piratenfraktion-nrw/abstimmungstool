@@ -9,5 +9,5 @@ class LoginHandler(BaseHandler):
         self.write(template.render())
 
     def post(self):
-        self.set_secure_cookie("user", tornado.escape.xhtml_escape(self.get_argument("name")))
+        self.set_secure_cookie("user", tornado.escape.xhtml_escape(self.get_argument("username")))
         self.redirect("/")
